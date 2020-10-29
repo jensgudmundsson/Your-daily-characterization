@@ -19,7 +19,7 @@
           var data = results.data
           var i = 0
           console.log(data.length)
-          document.getElementById("char").innerHTML = "For " + data[i].problem + ", " + data[i].solution;
+          document.getElementById("char").innerHTML = "For " + data[i].problem + ", " + data[i].solution + " is the only to satisfy " + data[i].axioms;
       }
 
       document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");        
