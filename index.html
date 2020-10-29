@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <p id="char"></p>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
     <script type="text/javascript"> var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfQILqCjgb6Dq-rlhVXnYOeh3Qq6vjOUDk1_Ox3E5F1qXA8KMadv8wOSUD8VKz_mAot9POgz3nU-Ip/pub?output=csv';
       function init() {
@@ -18,10 +16,8 @@
       function showInfo(results) {
           var data = results.data
           var i = Math.floor(Math.random() * data.length)
-          document.write("For " + data[i].problem + ", " + data[i].solution + " is the only to satisfy " + data[i].axioms + ". This was shown by <a target=_'new' href='" + data[i].url + "'>" + data[i].reference + "</a>.");
+          document.write("For " + data[i].problem + ", " + data[i].solution + " is the only to satisfy " + data[i].axioms + " (see <a target=_'new' href='" + data[i].url + "'>" + data[i].reference + "</a>).");
       }
-
-      document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");        
     </script>
   </body>
 </html>
