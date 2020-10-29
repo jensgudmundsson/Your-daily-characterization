@@ -18,7 +18,7 @@
       function showInfo(results) {
           var data = results.data
           var i = Math.floor(Math.random() * data.length)
-          document.getElementById("char").innerHTML = "For " + data[i].problem + ", " + data[i].solution + " is the only to satisfy " + data[i].axioms + ".";
+          document.write("For " + data[i].problem + ", " + data[i].solution + " is the only to satisfy " + data[i].axioms + ". This was shown by =" + data[i].reference + ".");
       }
 
       document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");        
