@@ -18,7 +18,7 @@
       function showInfo(results) {
           var data = results.data
           console.log(data.length)
-          document.getElementById("char").innerHTML = "For " + [ data[0].problem ];
+          document.getElementById("char").innerHTML = "For " + [ data[0].problem ] + ", " + data[0].solution;
       }
 
       document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");        
