@@ -16,8 +16,9 @@
       function showInfo(results) {
           var data = results.data
           var i = Math.floor(Math.random() * data.length)
-          document.write("<H1>Your daily characterization!</H1>");
-          document.write("For " + data[i].problem + ", " + data[i].solution + " is the only to satisfy " + data[i].axioms + " (see <a target=_'new' href='" + data[i].url + "'>" + data[i].reference + "</a>).");
+          document.write("<H1>Your daily characterization:</H1>");
+          document.write("<H2>For " + data[i].problem + ", " + data[i].solution + " is the only to satisfy " + data[i].axioms + ".</H2>");
+          document.write("Want to know more? See <a target=_'new' href='" + data[i].url + "'>" + data[i].reference + "</a>.");
       }
     </script>
   </body>
