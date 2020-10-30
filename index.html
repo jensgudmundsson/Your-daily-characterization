@@ -19,19 +19,16 @@
           document.write("<H1>Your daily characterization:</H1>");
           document.write("<H2>" + data[i].statement + ".</H2>");
           document.write("Want to know more? See <a target=_'new' href='" + data[i].url + "'>" + data[i].reference + "</a>.");
+          document.write('<form ation="https://api.sheetmonkey.io/form/fmEhyVpAdnDLpMEiMZCo1E" method="post">');
+
+          document.write('<label>Add your own: <input type="text" name="statement" required /></label>');
+          document.write('<input type="hidden" name="statement" value="statement" />');
+          document.write('<input type="hidden" name="reference" value="reference" />');
+          document.write('<input type="hidden" name="url" value="url" />');
+          document.write('<input type="submit" value="Submit" />');
+          document.write('</form>');
       }
     </script>
-
-    <p>
-<form action="https://api.sheetmonkey.io/form/fmEhyVpAdnDLpMEiMZCo1E" method="post">
-  <!-- Put HTML input fields in here and see how they fill up your sheet -->
-  <label>Add your own: <input type="text" name="statement" required /></label>                                                                                
-  <input type="hidden" name="statement" value="statement" />
-  <input type="hidden" name="reference" value="reference" />
-  <input type="hidden" name="url" value="url" />
-  <input type="submit" value="Submit" />
-</form>
-    </p>
 ~          
   </body>
 </html>
